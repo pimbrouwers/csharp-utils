@@ -42,7 +42,7 @@ namespace CsharpUtilities.Extensions
         /// Converts any string into a URL friendly version
         /// </summary>
         /// <param name="str"></param>
-        /// <returns></returns>
+        /// <returns>A lowercase and URL friendly version of text; empty string, wether fails.</returns>
         public static string ToFriendlyString(string str)
         {
             if (string.IsNullOrEmpty(str)) return "";
