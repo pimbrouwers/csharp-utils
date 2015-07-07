@@ -2,7 +2,7 @@
 using CsharpUtilities.Extensions;
 using Xunit;
 
-namespace CsharUtilities.Tests
+namespace CsharpUtilities.Tests
 {
     public class StringExtensionsTest
     {

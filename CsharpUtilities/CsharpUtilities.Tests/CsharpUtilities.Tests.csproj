@@ -8,8 +8,8 @@
     <ProjectGuid>{BCF6FFB6-7A7B-4B22-B956-2C076F79EC59}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CsharUtilities.Tests</RootNamespace>
-    <AssemblyName>CsharUtilities.Tests</AssemblyName>
+    <RootNamespace>CsharpUtilities.Tests</RootNamespace>
+    <AssemblyName>CsharpUtilities.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
