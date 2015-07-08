@@ -43,7 +43,7 @@ namespace CsharpUtilities.Extensions
         /// </summary>
         /// <param name="str"></param>
         /// <returns></returns>
-        public static string ToFriendlyString(string str)
+        public static string ToFriendlyString(this string str)
         {
             if (string.IsNullOrEmpty(str)) return "";
 
@@ -198,17 +198,21 @@ namespace CsharpUtilities.Extensions
         /// <returns></returns>
         public static List<string> StringToStringList(this string stringToSplit, char splitChar = ',')
         {
-            string[] splitString = stringToSplit.Split(splitChar);
             List<string> stringList = new List<string>();
 
-            foreach (string str in splitString)
+            if(!String.IsNullOrWhiteSpace(stringToSplit))
             {
-                if (String.IsNullOrWhiteSpace(str))
-                    continue;
+                string[] splitString = stringToSplit.Split(splitChar);
 
-                stringList.Add(str.Trim());
+
+                foreach (string str in splitString)
+                {
+                    if (String.IsNullOrWhiteSpace(str))
+                        continue;
+
+                    stringList.Add(str.Trim());
+                }
             }
-
 
             return stringList;
         }
