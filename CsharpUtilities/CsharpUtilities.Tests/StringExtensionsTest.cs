@@ -77,5 +77,15 @@ namespace CsharpUtilities.Tests
 
             Assert.Equal<string>(expected, actual);
         }
+
+        [Fact]
+        public void ToFriendlyStringIsAnExtensionMethod()
+        {
+            var text = "Test Title";
+            var expected = "test-title";
+            var actual = text.ToFriendlyString();
+
+            Assert.Equal<string>(expected, actual);
+        }
     }
 }
