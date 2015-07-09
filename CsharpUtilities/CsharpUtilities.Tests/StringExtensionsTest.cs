@@ -79,6 +79,15 @@ namespace CsharpUtilities.Tests
         }
 
         [Fact]
+        public void UnderscoreIsRemoved()
+        {
+            var expected = "modulename";
+            var actual = StringExtensions.ToFriendlyString("module_name");
+
+            Assert.Equal<string>(expected, actual);
+        }
+
+        [Fact]
         public void ToFriendlyStringIsAnExtensionMethod()
         {
             var text = "Test Title";
