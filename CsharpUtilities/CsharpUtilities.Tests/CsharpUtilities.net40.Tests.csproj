@@ -63,9 +63,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CsharpUtilities\CsharpUtilities.csproj">
+    <ProjectReference Include="..\CsharpUtilities\CsharpUtilities.net40.csproj">
       <Project>{db1c6ab0-6391-4bab-b41a-322fc424b921}</Project>
-      <Name>CsharpUtilities</Name>
+      <Name>CsharpUtilities.net40</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
