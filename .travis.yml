@@ -2,9 +2,9 @@ language: csharp
 solution: CsharpUtilities.net40.sln
  
 install:
-  - nuget restore CsharpUtilities.net40.sln
+  - nuget restore ./CsharpUtilities/CsharpUtilities.net40.sln
   - nuget install xunit.runners -Version 1.9.2 -OutputDirectory testrunner
  
 script:
-  - xbuild /p:Configuration=Release CsharpUtilities.net40.sln
-  - mono ./testrunner/xunit.runners.1.9.2/tools/xunit.console.clr4.exe ./CsharpUtilities.net40.Tests/bin/Release/net40/CsharpUtilities.net40.Tests.dll
+  - xbuild /p:Configuration=Release ./CsharpUtilities/CsharpUtilities.net40.sln
+  - mono ./testrunner/xunit.runners.1.9.2/tools/xunit.console.clr4.exe ./CsharpUtilities/CsharpUtilities.net40.Tests/bin/Release/net40/CsharpUtilities.net40.Tests.dll
